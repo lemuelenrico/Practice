@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <form method="post">
+      <input type="number" name="number1">
+      <input type="number" name="number2">
+      <input type="submit" name="abutton" value="add" onclick="addnums()">
+      <input type="text" name="equals" readonly>
+    <script>
+      function addnums(){
+        var total = 0;
+        var val1 = document.getElementById("number1").value;
+        var val2 = document.getElementById("number1").value;
+        var total = val1+val2;
+        document.getElementById("equals").innerHTML.value = total;
+      }
+    </script>
+  </body>
+</html>
